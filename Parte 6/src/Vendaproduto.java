@@ -3,7 +3,6 @@ public class Vendaproduto {
 public static void main(String[] args) {
     Scanner scanner = new Scanner(System.in);
 
-    // Criando objetos com diferentes construtores
     Produto p1 = new Produto(1);
     Produto p2 = new Produto(2, "Jogo Master");
     Produto p3 = new Produto(3, "Jogo Quebra-Cabeça", 30);
@@ -14,7 +13,7 @@ public static void main(String[] args) {
     String nomeP5 = scanner.nextLine();
     System.out.print("Quantidade: ");
     int quantP5 = scanner.nextInt();
-    scanner.nextLine(); // Consumir quebra de linha
+    scanner.nextLine(); 
     String tipoP5;
     while (true) {
         System.out.print("Tipo (jogo, brincadeira ou ferramenta): ");
@@ -30,7 +29,7 @@ public static void main(String[] args) {
     int valorP5 = scanner.nextInt();
 
     Produto p5 = new Produto(5, nomeP5, quantP5, tipoP5, valorP5);
-    // Inserindo dados no produto p1
+    
     p1.inserir("Jogo Xadrez", 15, "jogo", 80);
 
 
